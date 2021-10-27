@@ -1,9 +1,38 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title class="centered">Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<div (click)="login()">Login Page</div>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo-hq.png" />
+    </div>
+    <div class="input-container">
+      <ion-item lines="none">
+        <ion-label class="input-label" position="stacked">@ Email</ion-label>
+        <ion-input class="text-input"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label class="input-label" position="stacked"
+          ><ion-icon name="key-outline"></ion-icon> Password</ion-label
+        >
+        <ion-input class="text-input"></ion-input>
+      </ion-item>
+    </div>
+    <div class="button-container">
+      <ion-button
+        class="login-page-button"
+        color="primary"
+        expand="block"
+        (click)="login()"
+        >Login</ion-button
+      >
+      <ion-button fill="outline" class="login-page-button" color="primary" expand="block"
+        >Register</ion-button
+      >
+    </div>
+    <div class="forgot-password">Forgot your password?</div>
+  </div>
 </ion-content>

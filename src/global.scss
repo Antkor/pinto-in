@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,29 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: "YanoneKaffeesatz";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/YanoneKaffeesatz.ttf");
+}
+
+@font-face {
+  font-family: "YanoneKaffeesatz";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./assets/fonts/YanoneKaffeesatz-Bold.ttf");
+}
+
+.centered {
+  text-align: center;
+}
+
+ion-title {
+  color: #fff;
+}
+
+ion-menu-button {
+  --color: #fff;
+}

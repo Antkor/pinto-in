@@ -49,10 +49,6 @@ ion-menu.md ion-item {
   border-radius: 4px;
 }
 
-ion-menu.md ion-item.selected {
-  --background: rgba(var(--ion-color-primary-rgb), 0.14);
-}
-
 ion-menu.md ion-item.selected ion-icon {
   color: var(--ion-color-primary);
 }
@@ -116,4 +112,15 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  img {
+    max-width: 50%;
+  }
 }
