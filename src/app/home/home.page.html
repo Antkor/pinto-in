@@ -3,10 +3,23 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Home</ion-title>
+    <ion-title class="centered">Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  Home Page
+  <div class="page-container">
+    <div class="username">Hello Antonis!</div>
+    <div class="pintos-label">Your pintos are:</div>
+    <div class="pintos">8</div>
+    <div class="qr-code-label">Scan to use or add more pintos</div>
+    <ngx-qrcode
+      [elementType]="qrCodeType"
+      [value]="qrCodeValue"
+      [errorCorrectionLevel]="correctionLevel"
+      class="qrcode"
+      [width]="160"
+    >
+    </ngx-qrcode>
+  </div>
 </ion-content>

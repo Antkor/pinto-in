@@ -50,3 +50,11 @@ ion-title {
 ion-menu-button {
   --color: #fff;
 }
+
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
