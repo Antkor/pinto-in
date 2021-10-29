@@ -8,5 +8,11 @@
 </ion-header>
 
 <ion-content>
-  News Page
+  <ion-card *ngFor="let newsItem of newsData" (click)="showDetails(newsItem)">
+    <img src="assets/logo-hq.png" />
+    <div class="news-info">
+      <div class="title">{{newsItem.title}}</div>
+      <div class="text">{{getItemText(newsItem.text)}}</div>
+    </div>
+  </ion-card>
 </ion-content>

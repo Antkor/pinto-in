@@ -1,12 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-icon class="back" name="arrow-back" (click)="goBack()"></ion-icon>
     </ion-buttons>
     <ion-title class="centered">News Details</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  News Details Page
+  <img class="news-image" src="assets/logo-hq.png" />
+  <div class="news-info">
+    <div class="title">{{newsItem.title}}</div>
+    <div class="text">{{(newsItem.text)}}</div>
+  </div>
 </ion-content>
